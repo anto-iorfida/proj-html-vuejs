@@ -42,7 +42,7 @@ export default {
 
 <template>
     <header>
-        <nav class="container-lg d-flex justify-content-between align-items-center p-4">
+        <nav class="container custom-container d-flex justify-content-between align-items-center p-4">
 
             <div class="img-header">
                 <img :src="getImageUrl('avada-drivers-logo-2x-200x39.png')" alt="logo">
@@ -60,7 +60,9 @@ export default {
 <style lang="scss" scoped>
 @use '../style/variables' as*;
 header{
-    background-color: $grey-primar;
+    background-color: rgba(73, 76, 78, 0.5);
+    width: 100%;
+    position: fixed;
     ul li:nth-child(4)::after {
         content: "New";
         background-color: $green-primar;

@@ -1,11 +1,13 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
 import AppHero from './components/AppHero.vue';
+import LessonBooking from './components/LessonBooking.vue';
 
 export default {
   components: {
     AppHeader,
-    AppHero
+    AppHero,
+    LessonBooking
     
   },
   data() {
@@ -22,6 +24,7 @@ export default {
 
   <main>
 <AppHero></AppHero>
+<LessonBooking></LessonBooking>
   </main>
 </template>
 

@@ -22,7 +22,7 @@ export default {
                     architecto? Eos enim ad excepturi, sapiente corporis itaque!</p>
             </div>
             <div class="col-6">
-                <div class="booking text-center p-4">
+                <div class="booking lh-lg text-center p-4">
                     <h3>First Lesson Free!</h3>
                     <p>When you make a block booking with us your first lesson is included free.</p>
                     <form class="row g-3 needs-validation" novalidate>
@@ -100,6 +100,9 @@ export default {
 @use '../style/variables' as*;
 
 .info-lesson {
+    h2{
+        color: $black-primar;
+    }
     p {
         color: $grey-primar;
 

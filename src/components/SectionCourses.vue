@@ -71,7 +71,8 @@ export default {
 
 section {
     background-image: url('../assets/img/promise-background.jpg');
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
 
     .row {
         .col-5 {
@@ -115,9 +116,10 @@ section {
 }
 
 .grafic {
-    background-image: url('../assets/img/latestnews-bottom-600x52.png');
-    background-size: contain;
+    background-image: url('../assets/img/driving-triangle.svg');
+    background-size: cover;
     background-repeat: no-repeat;
+    
     // background-position: top;
     // background-color: blueviolet;
     .col {

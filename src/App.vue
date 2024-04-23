@@ -7,6 +7,7 @@ import SectionCourses from './components/SectionCourses.vue';
 import InfoInstructors from './components/InfoInstructors.vue';
 import Testimonials from './components/Testimonials.vue';
 import LatersNews from './components/LatersNews.vue';
+import Newsletter from './components/Newsletter.vue';
 
 export default {
   components: {
@@ -17,7 +18,8 @@ export default {
     SectionCourses,
     InfoInstructors,
     Testimonials,
-    LatersNews
+    LatersNews,
+    Newsletter
     
   },
   data() {
@@ -40,6 +42,7 @@ export default {
 <InfoInstructors></InfoInstructors>
 <Testimonials></Testimonials>
 <LatersNews></LatersNews>
+<Newsletter></Newsletter>
   </main>
 </template>
 

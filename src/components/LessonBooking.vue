@@ -14,7 +14,8 @@ export default {
         <div class="row container custom-container">
             <div class="info-lesson col-6 py-5">
                 <h2>Get Behind The Wheel</h2>
-                <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloribus officia velit id autem
+                <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloribus officia velit
+                    id autem
                     veritatis nam. Maxime cupiditate cumque, delectus itaque et?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloribus officia velit id autem
                     veritatis nam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut magni dicta cupiditate,
@@ -27,10 +28,12 @@ export default {
                     <p>When you make a block booking with us your first lesson is included free.</p>
                     <form class="row g-3 needs-validation" novalidate>
                         <div class="col-md-6">
-                            <input type="text" class="form-control" id="validationCustom01"  placeholder="First name" required>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="First name"
+                                required>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"
+                                required>
                         </div>
                         <div class="col-md-4">
                             <select class="form-select" id="validationCustom04" required>
@@ -45,10 +48,12 @@ export default {
                             </select>
                         </div>
                         <div class="col-md-8">
-                            <input type="text" class="form-control" id="validationCustom02" placeholder="Number" required>
+                            <input type="text" class="form-control" id="validationCustom02" placeholder="Number"
+                                required>
                         </div>
                         <div class="col-md-12">
-                            <input type="text" class="form-control" id="validationCustom03" placeholder="Email.." required>
+                            <input type="text" class="form-control" id="validationCustom03" placeholder="Email.."
+                                required>
                         </div>
                         <div class="col-md-8">
                             <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
@@ -99,30 +104,34 @@ export default {
 <style lang="scss" scoped>
 @use '../style/variables' as*;
 
-.info-lesson {
-    h2{
-        color: $black-primar;
-    }
-    p {
-        color: $grey-primar;
+h3 {
+    color: $green-primar;
+}
 
+p,
+label {
+    color: $grey-primar;
+}
+
+h2 {
+    color: $black-primar;
+}
+
+.info-lesson {
+    p {
         &:first-of-type {
             margin-top: 20px;
             font-size: large;
         }
     }
 }
-.booking{
+
+.booking {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
     position: relative;
     bottom: 40px;
     background-color: white;
-    h3{
-        color: $green-primar;
-    }
-    p,label{
-        color: $grey-primar;
-    }
+
 }
 </style>

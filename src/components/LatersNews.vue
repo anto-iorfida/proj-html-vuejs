@@ -67,10 +67,11 @@ section {
     background-image: url('../assets/img/latestnews-background.jpg');
     background-size: cover;
 
-    .row{
+    .row {
         position: relative;
         bottom: 20px;
     }
+
     .row.ciao {
         background-color: white;
         border-radius: 10px 10px 0 0;
@@ -100,13 +101,14 @@ section {
             }
         }
     }
-    .row.latestnews{
-        img{
+
+    .row.latestnews {
+        img {
             padding: 0;
         }
     }
-    
 
-    
+
+
 }
 </style>

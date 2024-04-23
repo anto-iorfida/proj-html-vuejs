@@ -89,7 +89,8 @@ export default {
     <section>
         <div class="row container custom-container">
             <div class="col-8 ">
-            <p>© Copyright 2012 - 2020 | Avada Theme by <span>ThemeFusion</span> | All Rights Reserved | Powered by <span> WordPress</span></p>
+                <p>© Copyright 2012 - 2020 | Avada Theme by <span>ThemeFusion</span> | All Rights Reserved | Powered by
+                    <span> WordPress</span></p>
             </div>
             <div class="col ">
                 <div class="icon d-flex gap-3 text-white justify-content-end ">
@@ -101,7 +102,7 @@ export default {
             </div>
         </div>
     </section>
-    
+
 </template>
 
 <style lang="scss" scoped>
@@ -112,7 +113,8 @@ li {
     color: $grey-primar;
 }
 
-li.courses,span {
+li.courses,
+span {
     color: $green-primar;
 }
 
@@ -129,6 +131,7 @@ section:first-of-type {
     background-image: url('../assets/img/footer-background-color.jpg');
     background-size: cover;
 }
+
 .row {
     padding: 50px 0;
 
@@ -138,9 +141,10 @@ section:first-of-type {
 
 }
 
-section{
+section {
     background-color: #1c1d1e;
-    p{
+
+    p {
         font-size: small;
     }
 }

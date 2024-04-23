@@ -42,6 +42,16 @@ export default {
 
 <template>
     <header>
+        <div class="row  ads">
+            <div class="row container custom-container ">
+                <div class="col">
+                    <p>We have a 95% Successful Pass Rate!</p>
+                </div>
+                <div class="col text-end">
+                    <p><i class="fa-solid fa-phone-flip"></i> Give us a call to book your tuition! 1-800-555-555 </p>
+                </div>
+            </div>
+        </div>
         <nav class="container custom-container d-flex justify-content-between align-items-center p-4">
 
             <div class="img-header">
@@ -59,11 +69,17 @@ export default {
 
 <style lang="scss" scoped>
 @use '../style/variables' as*;
-header{
+
+p {
+    color: $grey-primar;
+}
+
+header {
     background-color: rgba(73, 76, 78, 0.5);
     width: 100%;
     position: fixed;
     z-index: 20;
+
     ul li:nth-child(4)::after {
         content: "New";
         background-color: $green-primar;
@@ -71,6 +87,11 @@ header{
         margin-left: 6px;
         padding: 2px 4px;
         border-radius: 6px;
-}
+    }
+
+    .ads {
+        background-color: #1c1d1e;
+
+    }
 }
 </style>

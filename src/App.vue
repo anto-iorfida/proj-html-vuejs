@@ -8,6 +8,7 @@ import InfoInstructors from './components/InfoInstructors.vue';
 import Testimonials from './components/Testimonials.vue';
 import LatersNews from './components/LatersNews.vue';
 import Newsletter from './components/Newsletter.vue';
+import AppInfoFooter from './components/AppInfoFooter.vue';
 
 export default {
   components: {
@@ -19,15 +20,16 @@ export default {
     InfoInstructors,
     Testimonials,
     LatersNews,
-    Newsletter
-    
+    Newsletter,
+    AppInfoFooter
+
   },
   data() {
     return {
-      
+
     };
   },
-  methods:{}
+  methods: {}
 }
 </script>
 
@@ -35,18 +37,21 @@ export default {
   <AppHeader></AppHeader>
 
   <main>
-<AppHero></AppHero>
-<LessonBooking></LessonBooking>
-<InfoNumber></InfoNumber>
-<SectionCourses></SectionCourses>
-<InfoInstructors></InfoInstructors>
-<Testimonials></Testimonials>
-<LatersNews></LatersNews>
-<Newsletter></Newsletter>
+    <AppHero></AppHero>
+    <LessonBooking></LessonBooking>
+    <InfoNumber></InfoNumber>
+    <SectionCourses></SectionCourses>
+    <InfoInstructors></InfoInstructors>
+    <Testimonials></Testimonials>
+    <LatersNews></LatersNews>
+    <Newsletter></Newsletter>
   </main>
+
+  <footer>
+    <AppInfoFooter></AppInfoFooter>
+  </footer>
 </template>
 
 <style lang="scss">
 @use './style/generic';
-
 </style>

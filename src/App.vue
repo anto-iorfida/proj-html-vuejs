@@ -4,6 +4,7 @@ import AppHero from './components/AppHero.vue';
 import LessonBooking from './components/LessonBooking.vue';
 import InfoNumber from './components/InfoNumber.vue';
 import SectionCourses from './components/SectionCourses.vue';
+import InfoInstructors from './components/InfoInstructors.vue';
 
 export default {
   components: {
@@ -11,7 +12,8 @@ export default {
     AppHero,
     LessonBooking,
     InfoNumber,
-    SectionCourses
+    SectionCourses,
+    InfoInstructors
     
   },
   data() {
@@ -31,7 +33,7 @@ export default {
 <LessonBooking></LessonBooking>
 <InfoNumber></InfoNumber>
 <SectionCourses></SectionCourses>
-
+<InfoInstructors></InfoInstructors>
   </main>
 </template>
 

@@ -56,7 +56,7 @@ export default {
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-instagram"></i>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ratione deleniti aliquam  </p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem ratione deleniti aliquam </p>
             </div>
         </div>
     </section>
@@ -68,32 +68,42 @@ export default {
 p {
     color: $grey-primar;
 }
-h2,h5{
+
+h2,
+h5 {
     color: $black-primar;
 }
 
-.col {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    border-radius: 10px;
-    background-color: white;
-    border-top: 6px solid $green-primar;
-    text-align: center;
-    padding: 26px;
+section {
+    margin-top:80px;
 
-    img {
-        max-width: 200px;
-    }
-    h5{
-        margin: 18px 0;
-        font-weight: 500;
-    }
-    .icon{
-        display: flex;
-        justify-content: center;
-        gap: 14px;
-        margin-bottom: 10px;
-        color: $grey-primar;
+    .col {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        border-radius: 10px;
+        background-color: white;
+        border-top: 6px solid $green-primar;
+        text-align: center;
+        padding: 26px;
+        position: relative;
+        top: 30px;
 
+        img {
+            max-width: 200px;
+        }
+
+        h5 {
+            margin: 18px 0;
+            font-weight: 500;
+        }
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            margin-bottom: 10px;
+            color: $grey-primar;
+
+        }
     }
 }
 </style>

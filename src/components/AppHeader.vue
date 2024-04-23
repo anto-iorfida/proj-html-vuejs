@@ -63,6 +63,7 @@ header{
     background-color: rgba(73, 76, 78, 0.5);
     width: 100%;
     position: fixed;
+    z-index: 20;
     ul li:nth-child(4)::after {
         content: "New";
         background-color: $green-primar;

@@ -5,6 +5,7 @@ import LessonBooking from './components/LessonBooking.vue';
 import InfoNumber from './components/InfoNumber.vue';
 import SectionCourses from './components/SectionCourses.vue';
 import InfoInstructors from './components/InfoInstructors.vue';
+import Testimonials from './components/Testimonials.vue';
 
 export default {
   components: {
@@ -13,7 +14,8 @@ export default {
     LessonBooking,
     InfoNumber,
     SectionCourses,
-    InfoInstructors
+    InfoInstructors,
+    Testimonials
     
   },
   data() {
@@ -34,6 +36,7 @@ export default {
 <InfoNumber></InfoNumber>
 <SectionCourses></SectionCourses>
 <InfoInstructors></InfoInstructors>
+<Testimonials></Testimonials>
   </main>
 </template>
 

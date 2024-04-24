@@ -16,6 +16,7 @@ export default {
 
 <template>
     <section>
+        <!-- SECTION WITH INFO COURSES -->
         <div class="row container custom-container py-5">
             <div class="col-5 text-center p-5">
                 <img :src="getImageUrl('new-corner.jpg')" alt="">
@@ -25,6 +26,7 @@ export default {
                     aspernatur totam?</p>
                 <button class="btn-small">COURSE INFORMATION</button>
             </div>
+            <!-- SELECT COURSES ,3 TYPES OF COURSE-->
             <div class="col text-center">
                 <img :src="getImageUrl('courses-passplus-200x200.jpg')" alt="auto">
                 <h5>Pass Plus</h5>
@@ -42,24 +44,31 @@ export default {
             </div>
         </div>
     </section>
+    <!--  3 GRAFIC -->
     <section class="grafic">
         <div class="row py-2 gap-3 container custom-container">
             <div class="col text-center p-4">
-                <div>
-                    <h1>95%</h1>
-                </div>
+                <svg class="cerchio" viewBox="0 0 100 100">
+                    <circle class="bordo bordo-grigio" cx="50" cy="50" r="40"></circle>
+                    <circle cx="50" cy="50" r="40" stroke-dasharray="277" stroke-dashoffset="50"></circle>
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="grey">95%</text>
+                </svg>
+
                 <p>PASSAT RATE</p>
             </div>
             <div class="col text-center p-4">
-                <div>
-                   <h1>100%</h1>
-                </div>
+                <svg class="cerchio" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" stroke-dasharray="301" stroke-dashoffset="50"></circle>
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="grey">100%</text>
+                </svg>
                 <p>REFERRAL RATE</p>
             </div>
             <div class="col text-center p-4">
-                <div>
-                    <h1>0%</h1>
-                </div>
+                <svg class="cerchio" viewBox="0 0 100 100">
+                    <circle class="bordo bordo-grigio" cx="50" cy="50" r="40"></circle>
+                    <circle cx="50" cy="50" r="40" stroke-dasharray="246" stroke-dashoffset="243"></circle>
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="grey">1%</text>
+                </svg>
                 <p>ACCIDENT RATE</p>
             </div>
         </div>
@@ -119,26 +128,43 @@ section {
     background-image: url('../assets/img/driving-triangle.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    
-    // background-position: top;
-    // background-color: blueviolet;
+
     .col {
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius: 10px;
+        background-color: white;
         border-top: 6px solid $green-primar;
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        div {
-            height: 150px;
+        .cerchio {
             width: 150px;
-            border-radius: 50%;
-            border: 6px solid $green-primar;
-            h1{
-                line-height: 130px;
-                color: $grey-primar;
-            }
+            height: 150px;
+
+        }
+
+        .cerchio circle {
+            fill: none;
+            stroke: $green-primar;
+            stroke-width: 4;
+            // stroke-dasharray: 277;
+            // stroke-dashoffset: 50;
+            transform: rotate(270deg);
+            transform-origin: center;
+
+        }
+
+        .cerchio .bordo-grigio {
+            fill: none;
+            stroke: lightgray;
+            stroke-width: 4;
+        }
+
+        .cerchio text {
+            color: gray;
+            font-size: 20px;
+            font-weight: 500;
         }
 
         p {

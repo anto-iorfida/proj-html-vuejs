@@ -1,28 +1,30 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 
 
-
+// container standard
 .custom-container {
     max-width: 990px;
     margin-right: auto;
     margin-left: auto;
 }
 
-li{
+// utilis
+li {
     list-style: none;
 }
 
-ul{
+ul {
     margin: 0;
     padding: 0;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-.btn-small{
+// btn layout general
+.btn-small {
     padding: 8px 18px;
     font-size: small;
     font-weight: 500;
@@ -30,9 +32,21 @@ a{
     border: none;
     color: white;
     background-color: #7abc64;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+
+    &:hover {
+        color: red;
+        transform: scale(1.1);
+        background-color: white;
+        border: 2px solid #7abc64;
+        color: #7abc64;
+
+
+    }
 }
 
-.btn-info{
+.btn-info {
     padding: 5px 15px;
     font-size: x-small;
     font-weight: 500;
@@ -40,4 +54,28 @@ a{
     border: 3px solid #7799ad;
     color: #7799ad;
     background-color: transparent;
+    transition: transform 0.5s ease;
+
+    &:hover {
+        transform: scale(1.2);
+        border: 3px solid #7abc64;
+        color: #7abc64;
+    }
+}
+
+// hover icon
+.fa-instagram:hover {
+    color:  #E1306C
+
+}
+.fa-twitter:hover {
+    color: aqua;
+}
+
+.fa-facebook-f:hover {
+    color: blue;
+}
+
+.fa-youtube:hover {
+    color: red;
 }

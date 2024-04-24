@@ -10,6 +10,7 @@ export default {
 </script>
 
 <template>
+        <!-- SECTION WITH POSSIBILITY OF REGISTRATION TO NEWSLETTERE -->
     <section>
     <div class="row container custom-container text-center">
         <h2>Sign up to our Newsletter</h2>

@@ -55,6 +55,7 @@ export default {
 </script>
 
 <template>
+    <!-- FOOTER WITH INFO  -->
     <section>
         <div class="row container custom-container">
             <div class="col-3">
@@ -74,6 +75,7 @@ export default {
             </div>
             <div class="col-3">
                 <h5>COURSES</h5>
+                <!--  INFO INSERTED DYNAMICLY-->
                 <ul class="d-flex flex-column gap-3">
                     <li v-for="cors in courses" class="d-flex gap-3 courses"><span v-html="cors.icon"></span>{{
                         cors.name }}

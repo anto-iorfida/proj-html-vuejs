@@ -16,6 +16,7 @@ export default {
 
 <template>
     <section>
+        <!-- SECTION  REVIEWS WITH 5 REVIEWS-->
         <div class="row container custom-container text-center ">
             <h2>Testimonials</h2>
             <p>Here's what our happy drivers had to say about our services:</p>

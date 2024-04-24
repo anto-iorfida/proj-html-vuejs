@@ -34,19 +34,29 @@ export default {
 </script>
 
 <template>
+  <!-- header -->
   <AppHeader></AppHeader>
 
   <main>
+    <!-- hero with img -->
     <AppHero></AppHero>
+    <!-- section booking lesson -->
     <LessonBooking></LessonBooking>
+    <!-- section with information numbers -->
     <InfoNumber></InfoNumber>
+    <!-- section with description courses -->
     <SectionCourses></SectionCourses>
+    <!-- section info istructor -->
     <InfoInstructors></InfoInstructors>
+    <!-- section with reviews -->
     <Testimonials></Testimonials>
+    <!-- section with laters news -->
     <LatersNews></LatersNews>
+    <!-- section with blog subscriptions -->
     <Newsletter></Newsletter>
   </main>
 
+  <!-- section footer -->
   <footer>
     <AppInfoFooter></AppInfoFooter>
   </footer>

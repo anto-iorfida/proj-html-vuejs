@@ -10,29 +10,38 @@ export default {
     },
     data() {
         return {
+            // array object with data header
             infoHeader: [
                 {
-                    name: 'home'
+                    name: 'home',
+                    id: '1'
                 },
                 {
-                    name: 'about'
+                    name: 'about',
+                    id: '2'
                 },
                 {
-                    name: 'prices'
+                    name: 'prices',
+                    id: '3'
                 },
                 {
-                    name: 'courses'
+                    name: 'courses',
+                    id: '4'
                 },
                 {
-                    name: 'location'
+                    name: 'location',
+                    id: '5'
                 },
                 {
-                    name: 'blog'
+                    name: 'blog',
+                    id: '6'
                 }
             ]
+
         }
     },
     methods: {
+        // funtion to insert image
         getImageUrl(name) {
             return new URL(`../assets/img/${name}`, import.meta.url).href;
         }
@@ -42,6 +51,7 @@ export default {
 
 <template>
     <header>
+        <!-- section ads -->
         <div class="row  ads">
             <div class="row container custom-container ">
                 <div class="col">
@@ -52,13 +62,16 @@ export default {
                 </div>
             </div>
         </div>
+        <!-- navigation bar -->
         <nav class="container custom-container d-flex justify-content-between align-items-center p-4">
 
             <div class="img-header">
                 <img :src="getImageUrl('avada-drivers-logo-2x-200x39.png')" alt="logo">
             </div>
             <ul class="d-flex gap-4 ">
-                <infoHeader v-for="singleInfo in infoHeader" :infoHeader="singleInfo"></infoHeader>
+                <infoHeader v-for="(singleInfo, index) in infoHeader" :infoHeader="singleInfo" :key="singleInfo.id"
+                    :currentIndex="index">
+                </infoHeader>
             </ul>
 
             <button class="btn-small">BOOK NOW</button>
@@ -80,6 +93,7 @@ header {
     position: fixed;
     z-index: 20;
 
+    // component 'New' inser word COURSES
     ul li:nth-child(4)::after {
         content: "New";
         background-color: $green-primar;

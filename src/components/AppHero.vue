@@ -10,6 +10,7 @@ export default {
 </script>
 
 <template>
+    <!-- SECTION WITH IMG AND TEXT INFO -->
     <section>
         <div class="row container custom-container ">
             <div class="col-6">

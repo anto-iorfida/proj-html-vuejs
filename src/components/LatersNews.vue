@@ -15,6 +15,7 @@ export default {
 </script>
 
 <template>
+    <!-- SECTION WITH SOME QUESTIONS RELATING TO THE GUIDE -->
     <section>
         <div class="row container custom-container text-center bg-transparent">
             <div class="row ciao">

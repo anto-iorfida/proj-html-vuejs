@@ -11,6 +11,7 @@ export default {
 
 <template>
     <section>
+        <!-- INFORMATION BOOKING FIRST LESSON GENERAL -->
         <div class="row container custom-container">
             <div class="info-lesson col-6 py-5">
                 <h2>Get Behind The Wheel</h2>
@@ -22,19 +23,23 @@ export default {
                     exercitationem reprehenderit deserunt, accusamus aliquid eaque repellat laborum nam mollitia
                     architecto? Eos enim ad excepturi, sapiente corporis itaque!</p>
             </div>
+            <!-- FORM WHERE TO ENTER THE DATA TO BOOK THE LESSON -->
             <div class="col-6">
                 <div class="booking lh-lg text-center p-4">
                     <h3>First Lesson Free!</h3>
                     <p>When you make a block booking with us your first lesson is included free.</p>
                     <form class="row g-3 needs-validation" novalidate>
+                        <!-- INPUT NAME -->
                         <div class="col-md-6">
                             <input type="text" class="form-control" id="validationCustom01" placeholder="First name"
                                 required>
                         </div>
+                        <!-- INPUT LAST NAME -->
                         <div class="col-md-6">
                             <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"
                                 required>
                         </div>
+                        <!-- INPUT INSERT NUMBER PHONE -->
                         <div class="col-md-4">
                             <select class="form-select" id="validationCustom04" required>
                                 <option selected disabled value="">+</option>
@@ -51,16 +56,19 @@ export default {
                             <input type="text" class="form-control" id="validationCustom02" placeholder="Number"
                                 required>
                         </div>
+                        <!-- INPUT EMAIL -->
                         <div class="col-md-12">
                             <input type="text" class="form-control" id="validationCustom03" placeholder="Email.."
                                 required>
                         </div>
+                        <!-- INPUT CITY -->
                         <div class="col-md-8">
                             <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
                         </div>
+                        <!-- INPUT WITH OPTION REGION -->
                         <div class="col-md-4">
                             <select class="form-select" id="validationCustom04" required>
-                                <option selected disabled value="">Region</option>
+                                <option>Region</option>
                                 <option>Calabria</option>
                                 <option>Sicilia</option>
                                 <option>Toscana</option>
@@ -83,6 +91,7 @@ export default {
                                 <option>Liguria</option>
                             </select>
                         </div>
+                        <!-- INPUT AGREE TO TERM -->
                         <div class="col-12 text-start">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -91,6 +100,7 @@ export default {
                                 </label>
                             </div>
                         </div>
+                        <!-- BUTTON VALIDATION INPUT -->
                         <div class="col-12">
                             <button class="btn-small" type="submit">REQUEST A CALLBACK</button>
                         </div>

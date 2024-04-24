@@ -16,6 +16,7 @@ export default {
 
 <template>
     <section>
+        <!-- SECTION INFO ISTRUCTOR -->
         <div class="row my-5 container custom-container py-3">
             <div class="col-8">
                 <h2>Your Instructors</h2>
@@ -27,10 +28,12 @@ export default {
                 <div class="btn-small" width="100%">MORE ABOUT US</div>
             </div>
         </div>
+        <!-- 3 INSTRUCTORS WITH INFO -->
         <div class="row container custom-container gap-3">
             <div class="col">
                 <img :src="getImageUrl('instructor-mikehart-200x127.jpg')" alt="">
                 <h5>Mike Hart</h5>
+                <div class="hover-instructor">Instructor-Mike Hart</div>
                 <div class="icon">
                     <i class="fa-brands fa-facebook-f"></i>
                     <i class="fa-brands fa-twitter"></i>
@@ -41,6 +44,7 @@ export default {
             <div class="col">
                 <img :src="getImageUrl('instructor-johnsmith-200x127.jpg')" alt="">
                 <h5>John Smith</h5>
+                <div class="hover-instructor">Instructor-John Smith</div>
                 <div class="icon">
                     <i class="fa-brands fa-facebook-f"></i>
                     <i class="fa-brands fa-twitter"></i>
@@ -51,6 +55,7 @@ export default {
             <div class="col">
                 <img :src="getImageUrl('instructor-angelahart-200x127.jpg')" alt="">
                 <h5>Angela Hart</h5>
+                <div class="hover-instructor">Instructor-Angela Hart</div>
                 <div class="icon">
                     <i class="fa-brands fa-facebook-f"></i>
                     <i class="fa-brands fa-twitter"></i>
@@ -74,8 +79,12 @@ h5 {
     color: $black-primar;
 }
 
+.hover-instructor {
+    display: none;
+}
+
 section {
-    margin-top:80px;
+    margin-top: 80px;
 
     .col {
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -86,6 +95,21 @@ section {
         padding: 26px;
         position: relative;
         top: 30px;
+        transition: transform 0.5s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:hover .hover-instructor {
+            display: block;
+            position: absolute;
+            top: -44px;
+            left: -50px;
+            background-color: rgba(33, 33, 104, 0.25);
+            border-radius: 20px;
+            padding: 10px;
+        }
 
         img {
             max-width: 200px;

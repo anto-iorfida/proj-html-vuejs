@@ -11,6 +11,7 @@
 
 <template>
 <section>
+    <!-- SECTION WITH INFO NUMBERS FOR BOOKING LESSON -->
     <div class="row container custom-container py-5">
         <div class="col-6">
             <h2>Start Learning to Drive Today</h2>
